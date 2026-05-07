@@ -83,4 +83,18 @@ En esta API se trabajan los siguientes aspectos de Nest y PdfMake:
   - Trabajar diseños de tablas complejos
 
 ## Librerías utilizadas
+La gestión de la base de datos se realiza con [Prisma](https://www.prisma.io/):
+```bash
+$ npm install prisma --save-dev
+$ npx prisma init
 
+$ npm install @prisma/client @prisma/adapter-pg
+$ npx prisma db pull
+$ npx prisma generate
+```
+
+Para la gestión de las variables de entorno:
+pm i --save @nestjs/config
+```bash
+$ npm i --save @nestjs/config
+```
